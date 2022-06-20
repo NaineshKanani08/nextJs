@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  background-color: darkslategray;
 }
 
 .main {
@@ -11,8 +12,16 @@
   justify-content: center;
   align-items: center;
 }
+.form{
+  background-color: darkslategray;
+  color: white
+}
+.forminput{
+  background-color: rgb(218, 213, 213);
+  /* 333237 */
+}
 
-.footer {
+/* .footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
@@ -26,7 +35,7 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-}
+} */
 
 .title a {
   color: #0070f3;
