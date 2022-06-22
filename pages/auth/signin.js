@@ -3,7 +3,7 @@ import {useRouter} from 'next/router'
 import { signIn,useSession } from 'next-auth/react'
 import styles from '../../styles/Home.module.css'
 import { Button } from 'react-bootstrap'
-import {BsGithub,BsGoogle} from 'react-icons/Bs'
+import {FaGithub,FaGoogle} from 'react-icons/fa'
 import Head from 'next/head'
 const Signin = () => {
     const router = useRouter()
@@ -15,8 +15,8 @@ const Signin = () => {
         router.push(callbackUrl)
     }
     const providers=[
-        {name:'github',icon:<BsGithub />},
-        {name:'google',icon:<BsGoogle />}
+        {name:'github',icon:<FaGithub />},
+        {name:'google',icon:<FaGoogle />}
     ]
     const handleOAuthSignIn=(provider)=>{
         return signIn(provider)
