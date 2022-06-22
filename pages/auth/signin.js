@@ -12,7 +12,7 @@ const Signin = () => {
     if(session){
         const {callbackUrl}=router.query
         console.log('router.qurey :>> ', callbackUrl);
-        router.push(callbackUrl)
+        router.push('/')
     }
     const providers=[
         {name:'github',icon:<FaGithub />},
