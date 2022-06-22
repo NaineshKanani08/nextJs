@@ -1,6 +1,6 @@
-
+import React from 'react'
 import useSWR from 'swr'
-const dashboardSWR = () => {
+ const DashboardSWR = () => {
     const fetcher=async()=>{
         const result = await fetch("http://localhost:4000/dashboard")
         const data = await result.json()
@@ -21,5 +21,5 @@ const dashboardSWR = () => {
     </div>
   )
 }
-
-export default dashboardSWR
+DashboardSWR.auth=true
+export default DashboardSWR

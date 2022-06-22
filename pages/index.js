@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import {MongoClient} from 'mongodb'
 import MeetupList from '../components/meetups/MeetupList'
 import styles from '../styles/Home.module.css'

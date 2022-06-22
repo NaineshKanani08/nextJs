@@ -6,7 +6,7 @@ import { Button, Card, Col, Container, Row } from "react-bootstrap";
 const MeetupList = ({ meetups }) => {
   const router = useRouter();
   const showDetailsHandler = (id) => {
-    router.push(`/${id}`);
+    router.push(`/meetup/${id}`);
   };
 
   return (
