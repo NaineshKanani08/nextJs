@@ -12,7 +12,7 @@ const Signin = () => {
     if(session){
         const {callbackUrl}=router.query
         console.log('router.qurey :>> ', callbackUrl);
-        router.push('/')
+        router.push('https://nextapp-eta.vercel.app/')
     }
     const providers=[
         {name:'github',icon:<FaGithub />},
