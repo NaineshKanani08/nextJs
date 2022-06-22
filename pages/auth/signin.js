@@ -4,6 +4,7 @@ import { signIn,useSession } from 'next-auth/react'
 import styles from '../../styles/Home.module.css'
 import { Button } from 'react-bootstrap'
 import {BsGithub,BsGoogle} from 'react-icons/Bs'
+import Head from 'next/head'
 const Signin = () => {
     const router = useRouter()
     const {data:session,status}=useSession()
@@ -22,6 +23,11 @@ const Signin = () => {
     }
   return (
       <div className={styles.container}>
+          <Head>
+        <title>SignIn</title>
+        <meta name="description" content="SignIn to app" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
         <Button className="mt-3" onClick={()=>router.push('/')}>Back to Home</Button>
         <div>
             {providers.map(({name,icon})=>(
